@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
+import 'aftersplash.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -46,28 +48,6 @@ class _SplashState extends State<Splash> {
   }
 }
 
-class AfterSplash extends StatelessWidget {
-  const AfterSplash({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("BlogQuiz",
-          style: TextStyle(
-              fontWeight: FontWeight.w600,
-              color: Colors.black,
-              fontSize: 17),),
-      ),
-      body: Container(
-        child: Text("Page after splash screen",style: TextStyle(
-          color: Colors.black,
-          fontSize: 18,
-          fontWeight: FontWeight.w600,
-        ),),
-      ),
-    );
-  }
-}
 
 
