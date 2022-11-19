@@ -1,3 +1,5 @@
+import 'package:blogsquiz/alphabet.dart';
+import 'package:blogsquiz/number.dart';
 import 'package:flutter/material.dart';
 
 class AfterSplash extends StatelessWidget {
@@ -43,7 +45,7 @@ class AfterSplash extends StatelessWidget {
                                 backgroundColor: MaterialStateProperty.all(Colors.black),
                               ),
                               onPressed: (){
-                                //Navigator.push(context, MaterialPageRoute(builder: (context) => AlpQuiz()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Alphabet()));
                               },
                               child: const Text('Start Quiz!',style: TextStyle(
                                   color: Colors.orange,fontWeight: FontWeight.bold),),
@@ -84,7 +86,7 @@ class AfterSplash extends StatelessWidget {
                                 backgroundColor: MaterialStateProperty.all(Colors.black),
                               ),
                               onPressed: (){
-                                //Navigator.push(context, MaterialPageRoute(builder: (context) => NumIsl()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Number()));
                               },
                               child: const Text('Start Quiz!',
                                 style: TextStyle(
